@@ -1,0 +1,17 @@
+{% extends "bootstrap/base.html" %}
+{% block head %} {{super()}} {% endblock %}
+{% block title %}Display{% endblock %}
+{% block content %}
+<div class="container">
+	<table class="table">
+	{% for row in gearset %}
+	<tr>
+	<td><img title="mhw_greatsword" src="https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/rare-1-greatsword-mhw_tree.png"></td>
+		{% for r in row %}
+		<td>{{r}}</td>
+		{% endfor %}
+	</tr>
+	{% endfor %}
+	</table>
+</div>
+{% endblock %}
