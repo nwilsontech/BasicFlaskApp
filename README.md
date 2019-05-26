@@ -1,2 +1,7 @@
-# BasicFlaskApp
-Basic Flask App
+# Minimal Flask Application
+requirements:
+```
+Python3
+flask
+flask_bootstrap
+```
